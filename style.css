@@ -1,0 +1,139 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto', sans-serif;
+}
+
+body {
+    background: rgb(101,236,255);
+background: linear-gradient(90deg, rgba(101,236,255,1) 16%, rgba(127,255,106,1) 78%);
+}
+
+.answer-block-upper {
+    grid-area: upper-block;
+}
+
+.answer-block-lower {
+    grid-area: lower-block;
+}
+
+.btn-ac {
+    grid-area: ac;
+}
+
+.btn-del {
+    grid-area: del;
+}
+
+.btn-divide {
+    grid-area: divide;
+}
+
+.btn-1 {
+    grid-area: one;
+}
+
+.btn-2 {
+    grid-area: two;
+}
+
+.btn-3 {
+    grid-area: three;
+}
+
+.btn-4 {
+    grid-area: four;
+}
+.btn-5 {
+    grid-area: five;
+}
+.btn-6 {
+    grid-area: six;
+}
+.btn-7 {
+    grid-area: seven;
+}
+.btn-8 {
+    grid-area: eight;
+}
+.btn-9 {
+    grid-area: nine;
+}
+.btn-zero {
+    grid-area: zero;
+}
+.btn-multiply {
+    grid-area: multiply;
+}
+.btn-add {
+    grid-area: add;
+}
+.btn-subtract {
+    grid-area: subtract;
+}
+.btn-point {
+    grid-area: point;
+}
+.btn-equals {
+    grid-area: equals;
+}
+
+.calculator-container {
+    display: grid;
+    /* border-radius: 1rem; */
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr;
+    grid-template-areas: 
+    "upper-block upper-block upper-block upper-block"
+    "lower-block lower-block lower-block lower-block"
+    "ac ac del divide"
+    "one two three multiply"
+    "four five six add"
+    "seven eight nine subtract"
+    "point zero equals equals";
+}
+
+.answer-block-upper, .answer-block-lower {
+background-color: rgb(46, 50, 56);
+width: 1fr;
+height: 2.9rem;
+color: white;
+display: flex;
+justify-content: end;
+align-items: center;
+padding-right: 0.2rem;
+}
+
+.center-container {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+} 
+button {
+    min-width: 5rem;
+    min-height: 5rem;
+    background-color: rgb(220, 245, 255);
+    border: 0.1px white solid;
+    font-size: 1.5rem;
+    font-weight: 400;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: rgb(197, 236, 252);
+}
+
+button:active {
+    background-color: rgb(119, 228, 255);
+}
+
+.p1 {
+    font-size: 1.2rem;
+    font-weight: 300;
+}
+
+.p2 {
+    font-size: 1.5rem;
+    font-weight: 400;
+}
